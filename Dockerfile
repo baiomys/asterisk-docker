@@ -60,6 +60,7 @@ RUN	set -x \
 		--enable func_shell \
                 --enable func_blacklist \
                 --enable func_devstate \
+		--enable app_mp3 \
 		--enable app_confbridge \
 		--enable app_db \
 		--enable app_dial \

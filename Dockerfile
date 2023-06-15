@@ -6,7 +6,7 @@ ENV DEBIAN_FRONTEND=noninteractive
 
 RUN	set -x \
 	&& apt-get update \
-	&& apt-get install -y --no-install-recommends git autoconf automake ca-certificates \
+	&& apt-get install -y --no-install-recommends git autoconf automake ca-certificates mpg123 \
 # Download src
 	&& git clone --branch ${ASTERISK_VERSION} --single-branch --depth 1 https://github.com/asterisk/asterisk.git /usr/local/src/asterisk \
 	&& git clone https://github.com/wdoekes/asterisk-chan-dongle.git /usr/local/src/chan-dongle \

@@ -57,6 +57,9 @@ RUN	set -x \
 		--enable func_math \
 		--enable func_sprintf \
 		--enable func_strings \
+		--enable func_shell \
+                --enable func_blacklist \
+                --enable func_devstate \
 		--enable app_confbridge \
 		--enable app_db \
 		--enable app_dial \

@@ -18,7 +18,7 @@ RUN	set -x \
 	&& make menuselect.makeopts \
 	&& menuselect/menuselect --disable BUILD_NATIVE --disable-all \
 		--enable chan_bridge_media \
-		--enable chan_sip \
+#		--enable chan_sip \
 		--enable chan_rtp \
 		--enable chan_alsa \
 		--enable chan_pjsip \
@@ -85,6 +85,7 @@ RUN	set -x \
 		--enable pbx_config \
 		--enable pbx_lua \
 		--enable pbx_realtime \
+		--enable res_musiconhold \
 		--enable res_agi \
 		--enable res_ari \
 		--enable res_ari_applications \

@@ -33,6 +33,9 @@ RUN     set -x \
                 --enable cel_pgsql \
                 --enable cel_odbc \
                 --enable bridge_native_rtp \
+                --enable bridge_builtin_interval_features \
+                --enable bridge_builtin_features \
+                --enable bridge_holding \
                 --enable bridge_simple \
                 --enable codec_gsm \
                 --enable codec_a_mu \

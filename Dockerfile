@@ -66,6 +66,7 @@ RUN     set -x \
                 --enable func_blacklist \
                 --enable func_devstate \
                 --enable func_timeout \
+                --enable func_md5 \                
                 --enable app_mp3 \
                 --enable app_confbridge \
                 --enable app_db \

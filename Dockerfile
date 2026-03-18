@@ -1,9 +1,7 @@
 FROM debian:buster
 
-#ENV ASTERISK_VERSION certified/13.21-cert6
-#ENV ASTERISK_VERSION_DONGLE 13.21
-ENV ASTERISK_VERSION certified/16.8-cert14
-ENV ASTERISK_VERSION_DONGLE 16.8
+ENV ASTERISK_VERSION certified/18.9-cert17
+ENV ASTERISK_VERSION_DONGLE 18.9
 ENV DEBIAN_FRONTEND=noninteractive
 
 RUN     set -x \
@@ -21,6 +19,9 @@ RUN     set -x \
         && menuselect/menuselect --disable BUILD_NATIVE --disable-all \
                 --enable chan_bridge_media \
 #               --enable chan_sip \
+                --enable res_audiosocket \
+                --enable chan_audiosocket \
+                --enable app_audiosocket \
                 --enable chan_rtp \
                 --enable chan_alsa \
                 --enable chan_pjsip \

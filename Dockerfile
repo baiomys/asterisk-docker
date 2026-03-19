@@ -1,4 +1,4 @@
-FROM debian:buster
+FROM debian:bookworm
 
 ENV ASTERISK_VERSION certified/18.9
 ENV ASTERISK_VERSION_DONGLE 18.9

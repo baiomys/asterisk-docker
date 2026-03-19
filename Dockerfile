@@ -192,6 +192,7 @@ RUN     set -x \
                 menuselect.makeopts \
         && make all \
         && make install \
+        && make install-headers \
         && make dist-clean \
         && make clean \
 # Install chan-dongle
